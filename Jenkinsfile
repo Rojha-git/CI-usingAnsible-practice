@@ -48,6 +48,20 @@ pipeline {
                
                sh "ansible-playbook main.yml -i inventories/dev/hosts --user jenkins --key-file ~/.ssh/id_rsa"
 
+                                       "or"
+
+'''#by script,
+
+ 
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                // Execute the updated shell script for deployment
+                sh './deploy.sh'
+      
+}'''
+
+
                
             
             }
